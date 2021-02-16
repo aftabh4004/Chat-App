@@ -1,0 +1,16 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A real time chat app using socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "aftabh4004",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
