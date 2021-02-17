@@ -47,7 +47,7 @@ socket.on('NewMessage', (msgObj) => {
     const html = Mustache.render(messageTemplate, {
         "username": msgObj.username,
         "message": msgObj.text,
-        "createdAt": moment(msgObj.createdAt).format('HH:MM'),
+        "createdAt": moment(msgObj.createdAt).format('HH:mm'),
     });
     msgDiv.insertAdjacentHTML('beforeend', html);
     autoScroll();
@@ -60,7 +60,7 @@ socket.on('displayLocation', (locationObj) => {
         "username": locationObj.username,
         "latitude": locationObj.latitude,
         "longitude": locationObj.longitude,
-        "createdAt": moment(locationObj.createdAt).format('HH:MM')
+        "createdAt": moment(locationObj.createdAt).format('HH:mm')
     });
     msgDiv.insertAdjacentHTML('beforeend', html);
     autoScroll();
